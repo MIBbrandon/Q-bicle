@@ -1,4 +1,6 @@
-import qiskit
+from qiskit import *
+
+ # %matplotlib inline
 
 # Use Aer's qasm_simulator
 simulator = Aer.get_backend('qasm_simulator')
@@ -13,7 +15,7 @@ circuit.h(0)
 circuit.cx(0, 1)
 
 # Map the quantum measurement to the classical bits
-circuit.measure([0,1], [0,1])
+circuit.measure([0, 1], [0, 1])
 
 # Execute the circuit on the qasm simulator
 job = execute(circuit, simulator, shots=1000)
@@ -23,7 +25,7 @@ result = job.result()
 
 # Returns counts
 counts = result.get_counts(circuit)
-print("\nTotal count for 00 and 11 are:",counts)
+print("\nTotal count for 00 and 11 are:", counts)
 
 # Draw the circuit
-circuit.draw()
+circuit.draw()  # circuit.draw(output='mpl') to have a nicer image of the circuit
