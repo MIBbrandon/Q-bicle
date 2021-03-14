@@ -4,6 +4,10 @@ Quantum Code related stuff, mainly using Qiskit.
 ## Theta explorer
 Simply graphs the counts of states that a quantum circuit produces as a single value (theta) is varied from 0 to 2*pi.
 
+<p align="center">
+  <img width=450 src="https://github.com/MIBbrandon/Q-bicle/blob/master/media/gifs/q-bicle-show_theta_explorer.gif" />
+</p>
+
 ### Example 1
 
 <p align="center">
