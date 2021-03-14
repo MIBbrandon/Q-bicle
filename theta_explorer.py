@@ -124,7 +124,7 @@ for theta_val in theta:
     circuit.rx(theta_val, 0)
     circuit.ry(theta_val, 1)
     circuit.ch(1, 0)
-    circuit.rz(theta_val, 0)
+    circuit.ry(theta_val, 0)
     circuit.ch(0, 1)
     circuit.ry(theta_val, 0)
     circuit.rz(theta_val, 1)
